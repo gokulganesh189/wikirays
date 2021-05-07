@@ -1,0 +1,198 @@
+
+body{
+    perspective:  1000px;
+    background-color: #093125;
+    overflow-x: hidden;
+}
+.menu-bar{
+    z-index:-1;
+    color:#c4aeae;
+    background-attachment: fixed;
+    background-color:#093125;
+    font-size: 1.1rem;
+   padding-left:50px;
+  border-bottom: 2px solid black;
+}
+.catelog{
+    padding-top: 20px;
+    padding-bottom: 10px;
+   
+}
+.sort{
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  
+}
+.filter{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+   
+}
+.aviator{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.container{
+    width:60%;
+    /* background:lightblue; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #517469;
+    transform-style: preserve-3d;
+    min-height: 85vh;
+    width:25rem;
+    border-radius: 20px;
+    padding:0rem 3rem;
+    box-shadow: 4px 4px 8px black;
+    /* background:lightcoral; */
+}
+.sneaker{
+    min-height: 35vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sneaker img{
+    transition:all 0.75s ease-out;
+    width:12rem;
+    z-index: 2;
+}
+.circle{
+    width:10rem;
+    height:10rem;
+    background: linear-gradient(to right, #33ccff 0%, #ccff33 100%);
+    position:absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info h1{
+    font-size:3rem;
+    transition:all 0.75s ease-out;
+}
+.title{
+    transform-style: preserve-3d;
+}
+.info h3{
+    transition:all 0.75s ease-out;
+    font-size:1.2rem;
+    padding:2rem 0rem;
+    color:#093125;
+    font-weight: light;
+}
+.sizes{
+    display:flex;
+    justify-content: space-between;
+    transition:all 0.75s ease-out;
+}
+.sizes button{
+    transition:all 0.75s ease-out;
+    border:none;
+    padding:.5rem 1.5rem;
+    border-radius:20px;
+    box-shadow:2px 2px 4px black;
+    cursor:pointer;
+    font-weight: bold;
+    color:#585858;
+}
+button.active{
+    background:#585858;
+    color:white;
+}
+.purchase{
+    margin-top:50px;
+}
+.purchase button{
+    transition:all 0.75s ease-out;
+    width:100%;
+    padding:1rem 0rem;
+    background:#1a81a3;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius: 20px;
+    font-weight:bold;
+}
+
+nav{
+    border-bottom: 2px solid black;
+}
+.navbar-brand{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding:10px;
+}
+
+.mailing{
+    background-color: #0d1311;
+    color:white;
+    padding:20px;
+}
+.mail-content{
+    display:flex;
+}
+.mail-content h5{
+    display:flex;
+    padding-left: 50px;
+    margin-top:-3px;
+}
+.fa-envelope{
+    font-size:1.2rem;
+}
+.social-footer{
+    background-color:grey;
+    padding:20px;
+}
+.social-footer a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:black;
+    padding:0px 10px 0px 10px;
+}
+.credit .fa-cc-visa{
+    color:blue;
+}
+.credit .fa-cc-mastercard{
+    color:red;
+}
+.credit .fa-paypal{
+    color:rgb(32, 90, 167);
+}
+
+
+@media screen and (max-width:600px){
+    .card{
+        background-color: #517469;
+        transform-style: preserve-3d;
+        min-height: 85vh;
+        width:25rem;
+        border-radius: 20px;
+        padding:1rem 1rem;
+        box-shadow: 4px 4px 8px black;
+        /* background:lightcoral; */
+    }
+    .menu-bar{
+        padding:0px;
+        margin:0px;
+        display:flex;
+        text-align: center;
+    }
+    .social-footer{
+        display:flex;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin:0px;
+    }
+    
+}
